@@ -64,6 +64,7 @@ const Home = () => {
       axios
         .get(API)
         .then((res) => {
+          console.log(res)
           let imagePath = "";
           let iconPath = "";
           if (res.data.weather[0].main == "Clouds") {
@@ -74,6 +75,10 @@ const Home = () => {
             imagePath =
               "https://images.pexels.com/photos/96622/pexels-photo-96622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
             iconPath = "https://openweathermap.org/img/wn/01d.png";
+          } else if (res.data.weather[0].main === "Thunderstorm") {
+            imagePath =
+              "https://images.pexels.com/photos/1118869/pexels-photo-1118869.jpeg";
+            iconPath = "https://openweathermap.org/img/wn/11n.png";
           } else if (res.data.weather[0].main == "Rain") {
             imagePath =
               "https://images.pexels.com/photos/2448749/pexels-photo-2448749.jpeg?auto=compress&cs=tinysrgb&w=600";

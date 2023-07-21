@@ -1,0 +1,19 @@
+.App {
+
+  height: 100%;
+  width: 100%;
+}
+
+body {
+   background: url("./images/background.jpg"); 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  /* background-color: #5BD485; */
+}

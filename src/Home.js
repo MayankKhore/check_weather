@@ -60,7 +60,7 @@ const Home = () => {
 
   const search = () => {
     if (name !== "") {
-      const API = `https://api.openweathermap.org/data/2.5/weather?q=${name}&APPID=b16007af4f6df42ebb253158c202dbf3&units=metric`;
+      const API = `https://api.openweathermap.org/data/2.5/weather?q=${name}&APPID={your id }&units=metric`;
       axios
         .get(API)
         .then((res) => {
